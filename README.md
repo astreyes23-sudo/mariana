@@ -1,2 +1,2 @@
 # mariana
-te amo novia de hace 3 meses, pero de toda mi vida tho.
+te amo novia de hace 3 meses, pero de toda mi vida.
