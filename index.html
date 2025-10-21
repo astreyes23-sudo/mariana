@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>3 meses con el amor de mi vida 💘</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0ff;
+      font-family: monospace;
+      font-size: 18px;
+      white-space: pre-wrap;
+      padding: 20px;
+    }
+    input {
+      background: black;
+      border: none;
+      border-bottom: 1px solid #0ff;
+      color: #0ff;
+      font-size: 18px;
+      font-family: monospace;
+      width: 100px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="contenido">
+    <p># 3 meses contigo. Escribe sí para continuar.</p>
+    <p>(sí/no):</p>
+    <p>Para una mejor experiencia, te invito a reproducir esto:</p>
+    <p><a href="https://on.soundcloud.com/UJyTzDHAYnk9UI39je" target="_blank">[ Reproducir ]</a></p>
+    <p>Espero no te hayan tirado anuncio 😰 ¿Ya?</p>
+    <input type="text" id="respuesta" placeholder="sí / no" autofocus />
+  </div>
+
+  <script>
+    const input = document.getElementById("respuesta");
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        const val = input.value.toLowerCase().trim();
+        let mensaje = "";
+        if (val === "sí" || val === "si") {
+          mensaje = "En ese caso. Seguimos...\n";
+        } else if (val === "no") 
+          mensaje = "Escribe solo 'sí' o 'no'.\n";
+      
